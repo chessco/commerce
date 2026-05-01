@@ -21,7 +21,6 @@ desktop.ini
 !.env.example
 .secret
 credentials.json
-api/error.txt
 
 # --- Architecture & Build ---
 dist/
@@ -31,12 +30,13 @@ coverage/
 .turbo/
 .vercel/
 .next/
+*.tsbuildinfo
 
-# --- Frontend (Vite/React) ---
-frontend/node_modules/
-frontend/dist/
-frontend/dist-ssr/
-frontend/coverage/
+# --- Web (Vite/React) ---
+web/node_modules/
+web/dist/
+web/dist-ssr/
+web/coverage/
 
 # --- API (NestJS/Prisma) ---
 api/node_modules/
@@ -44,6 +44,10 @@ api/dist/
 api/coverage/
 api/prisma/*.db
 api/prisma/*.db-journal
+api/*.txt
+!api/README.md
+api/temp_prisma/
+procede
 
 # --- Docker & Database ---
 .docker/

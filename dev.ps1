@@ -16,12 +16,12 @@ Start-Sleep -Seconds 5
 Write-Host "[2/3] Levantando Backend (NestJS) en el puerto 3011..." -ForegroundColor Yellow
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd api; npm run start:dev" -WindowStyle Normal
 
-# 3. Levantar el Frontend (React/Vite) en una nueva ventana
-Write-Host "[3/3] Levantando Frontend (Vite) en el puerto 3008..." -ForegroundColor Yellow
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd frontend; npm run dev" -WindowStyle Normal
+# 3. Levantar el Web (React/Vite) en una nueva ventana
+Write-Host "[3/3] Levantando Web (Vite) en el puerto 3008..." -ForegroundColor Yellow
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd web; npm run dev" -WindowStyle Normal
 
 Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host " ¡Todo Listo! El sistema está operando." -ForegroundColor Green
 Write-Host " Backend corriendo en http://localhost:3011" -ForegroundColor Gray
-Write-Host " Frontend corriendo en http://localhost:3000" -ForegroundColor Gray
+Write-Host " Web corriendo en http://localhost:3000" -ForegroundColor Gray
 Write-Host "=========================================" -ForegroundColor Cyan

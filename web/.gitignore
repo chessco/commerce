@@ -1,4 +1,4 @@
-# Voltia Frontend .gitignore (Vite/React)
+# Voltia Web .gitignore (Vite/React)
 
 node_modules/
 dist/
