@@ -1,0 +1,32 @@
+﻿
+> api@0.0.1 lint
+> eslint "{src,apps,libs,test}/**/*.ts" --fix
+
+
+C:\PitayaCode\Voltia\api\src\common\guards\jwt-auth.guard.ts
+  15:28  error  'info' is defined but never used        @typescript-eslint/no-unused-vars
+  20:5   error  Unsafe return of a value of type `any`  @typescript-eslint/no-unsafe-return
+
+C:\PitayaCode\Voltia\api\src\common\middleware\tenant.middleware.ts
+  4:3  error  'UnauthorizedException' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\PitayaCode\Voltia\api\src\main.ts
+  15:1  warning  Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator  @typescript-eslint/no-floating-promises
+
+C:\PitayaCode\Voltia\api\src\modules\auth\auth.controller.ts
+  11:35  warning  Unsafe argument of type `any` assigned to a parameter of type `string`  @typescript-eslint/no-unsafe-argument
+  11:52  warning  Unsafe argument of type `any` assigned to a parameter of type `string`  @typescript-eslint/no-unsafe-argument
+
+C:\PitayaCode\Voltia\api\src\modules\auth\jwt.strategy.ts
+  16:3   error  Async method 'validate' has no 'await' expression  @typescript-eslint/require-await
+  18:7   error  Unsafe assignment of an `any` value                @typescript-eslint/no-unsafe-assignment
+  18:23  error  Unsafe member access .sub on an `any` value        @typescript-eslint/no-unsafe-member-access
+  19:7   error  Unsafe assignment of an `any` value                @typescript-eslint/no-unsafe-assignment
+  19:22  error  Unsafe member access .email on an `any` value      @typescript-eslint/no-unsafe-member-access
+  20:7   error  Unsafe assignment of an `any` value                @typescript-eslint/no-unsafe-assignment
+  20:21  error  Unsafe member access .role on an `any` value       @typescript-eslint/no-unsafe-member-access
+  21:7   error  Unsafe assignment of an `any` value                @typescript-eslint/no-unsafe-assignment
+  21:25  error  Unsafe member access .tenantId on an `any` value   @typescript-eslint/no-unsafe-member-access
+
+Γ£û 15 problems (12 errors, 3 warnings)
+

@@ -1,0 +1,21 @@
+# Voltia API .gitignore (NestJS/Prisma)
+
+node_modules/
+dist/
+coverage/
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Prisma
+/prisma/*.db
+/prisma/*.db-journal
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Voltia Infrastructure Dashboard</title>
+<!-- Inter Font for Surgical Intelligence -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#a9b4b9",
+                        "on-error": "#fff7f7",
+                        "on-secondary": "#f8f8ff",
+                        "inverse-surface": "#0b0f10",
+                        "surface-bright": "#f7f9fb",
+                        "primary-dim": "#0041d3",
+                        "surface-tint": "#004bf0",
+                        "surface-container-highest": "#d9e4ea",
+                        "surface": "#f7f9fb",
+                        "on-background": "#2a3439",
+                        "error-dim": "#4f0116",
+                        "surface-container-low": "#f0f4f7",
+                        "primary": "#004bf0",
+                        "on-primary-fixed-variant": "#0048e9",
+                        "primary-container": "#dde1ff",
+                        "secondary": "#535f76",
+                        "on-primary-container": "#0040d2",
+                        "on-tertiary-container": "#564d69",
+                        "on-primary-fixed": "#0031a7",
+                        "secondary-dim": "#475369",
+                        "on-error-container": "#782232",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-dim": "#574f6a",
+                        "inverse-on-surface": "#9a9d9f",
+                        "tertiary": "#635b77",
+                        "secondary-fixed": "#d6e3fd",
+                        "primary-fixed-dim": "#cad2ff",
+                        "surface-dim": "#cfdce3",
+                        "on-secondary-fixed": "#344055",
+                        "secondary-container": "#d6e3fd",
+                        "primary-fixed": "#dde1ff",
+                        "on-primary": "#f8f7ff",
+                        "on-surface-variant": "#566166",
+                        "on-secondary-fixed-variant": "#505c72",
+                        "error-container": "#ff8b9a",
+                        "surface-variant": "#d9e4ea",
+                        "surface-container": "#e8eff3",
+                        "tertiary-fixed-dim": "#dbcff0",
+                        "on-tertiary": "#fdf7ff",
+                        "surface-container-high": "#e1e9ee",
+                        "inverse-primary": "#6b89ff",
+                        "on-surface": "#2a3439",
+                        "tertiary-fixed": "#e9ddff",
+                        "on-tertiary-fixed": "#433b55",
+                        "error": "#9e3f4e",
+                        "background": "#f7f9fb",
+                        "on-secondary-container": "#465268",
+                        "tertiary-container": "#e9ddff",
+                        "outline": "#717c82",
+                        "secondary-fixed-dim": "#c8d5ef",
+                        "on-tertiary-fixed-variant": "#605773"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+            font-size: 20px;
+        }
+        .surgical-grid {
+            background-image: radial-gradient(#d9e4ea 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .backdrop-blur-custom {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#f7f9fb] dark:bg-[#0A172A] font-['Inter'] tracking-tight antialiased docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 shadow-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#0050FF] dark:text-[#004bf0]" data-icon="sensors">sensors</span>
+<h1 class="text-xl font-bold tracking-tighter text-slate-900 dark:text-white">Voltia</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex items-center gap-6">
+<a class="text-[#0050FF] dark:text-[#004bf0] text-sm font-semibold transition-all duration-200 ease-in-out" href="#">Overview</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium hover:bg-slate-200/50 dark:hover:bg-slate-800/50 px-2 py-1 rounded transition-all" href="#">Assets</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium hover:bg-slate-200/50 dark:hover:bg-slate-800/50 px-2 py-1 rounded transition-all" href="#">Alerts</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium hover:bg-slate-200/50 dark:hover:bg-slate-800/50 px-2 py-1 rounded transition-all" href="#">Settings</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 cursor-pointer" data-icon="cloud_done">cloud_done</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional corporate headshot of an infrastructure executive with a neutral background and sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgPvTOYV3xWRiOSBLs-WpZ-0PitaNb-LBtY0M2IoD8Yt1CwnrLi2trHBEQCT7AhRhrsD88DPnZyPQvG2XC7UwjsDOCKLYZ2oBhWCf0GGe1HtgGaW6wILalpMvMhCUCpI79V_bD2tMQiQxW_uZmEM5Gj3EBs7PNuFYAb1B-p7tV7JFMRBcN_MX5HJ1vpWSXnmoiV3fOKf2xBl4csNGeJt0lUl_8yoA0irm3dDC9kciJ9pafZlXSamqXwMIAjCdQrp0HKmPf4ggs0Q"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1600px] mx-auto px-6 py-8 pb-24">
+<!-- Dashboard Header -->
+<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<h2 class="text-3xl font-extrabold tracking-tighter text-on-surface mb-1">Global Infrastructure</h2>
+<p class="text-on-surface-variant text-sm flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    Operational status: Nominal • Last updated 14s ago
+                </p>
+</div>
+<div class="flex gap-3">
+<button class="bg-surface-container-high text-on-surface px-4 py-2 rounded-md text-sm font-medium hover:bg-surface-container-highest transition-colors">Export Logs</button>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-4 py-2 rounded-md text-sm font-semibold shadow-sm">Provision Asset</button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-12 gap-6">
+<!-- KPI Summary Cards -->
+<div class="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Uptime Card -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm border-b-2 border-primary/10">
+<div class="flex justify-between items-start mb-4">
+<span class="text-on-surface-variant text-xs font-semibold uppercase tracking-widest">Uptime</span>
+<span class="text-primary material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</div>
+<div>
+<div class="text-3xl font-bold tracking-tight mb-1">99.99%</div>
+<div class="flex items-center gap-1.5">
+<div class="h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[99.99%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Latency Card -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm border-b-2 border-transparent">
+<div class="flex justify-between items-start mb-4">
+<span class="text-on-surface-variant text-xs font-semibold uppercase tracking-widest">Latency</span>
+<span class="text-on-surface-variant material-symbols-outlined" data-icon="speed">speed</span>
+</div>
+<div>
+<div class="text-3xl font-bold tracking-tight mb-1">14<span class="text-lg font-medium text-on-surface-variant ml-1">ms</span></div>
+<div class="text-[10px] text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined !text-[12px]" data-icon="trending_down">trending_down</span>
+                            -2.4% FROM MEAN
+                        </div>
+</div>
+</div>
+<!-- Throughput Card -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex flex-col justify-between shadow-sm border-b-2 border-transparent">
+<div class="flex justify-between items-start mb-4">
+<span class="text-on-surface-variant text-xs font-semibold uppercase tracking-widest">Throughput</span>
+<span class="text-on-surface-variant material-symbols-outlined" data-icon="swap_calls">swap_calls</span>
+</div>
+<div>
+<div class="text-3xl font-bold tracking-tight mb-1">420<span class="text-lg font-medium text-on-surface-variant ml-1">Tbps</span></div>
+<div class="flex items-center gap-0.5">
+<div class="w-1.5 h-3 bg-primary/20 rounded-sm"></div>
+<div class="w-1.5 h-4 bg-primary/40 rounded-sm"></div>
+<div class="w-1.5 h-6 bg-primary/60 rounded-sm"></div>
+<div class="w-1.5 h-5 bg-primary/80 rounded-sm"></div>
+<div class="w-1.5 h-8 bg-primary rounded-sm"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Activity Panel -->
+<div class="col-span-12 lg:col-span-4 lg:row-span-2 bg-surface-container-low rounded-xl p-6 overflow-hidden flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-sm font-bold uppercase tracking-wider text-on-surface">Security Feed</h3>
+<span class="text-[10px] font-bold text-primary cursor-pointer hover:underline">VIEW ALL</span>
+</div>
+<div class="space-y-6 flex-1 overflow-y-auto pr-2">
+<!-- Activity Item -->
+<div class="flex gap-4 group">
+<div class="mt-1 w-2 h-2 rounded-full bg-error shrink-0"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-on-surface group-hover:text-primary transition-colors">Anomalous SSH Attempt</span>
+<span class="text-[11px] text-on-surface-variant">Server Cluster: US-EAST-1 (Node 402)</span>
+<span class="text-[10px] text-outline mt-1 uppercase">2m ago • SEV-1</span>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shrink-0"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-on-surface group-hover:text-primary transition-colors">Traffic Shift Complete</span>
+<span class="text-[11px] text-on-surface-variant">Redirected 40% load to EU-CENTRAL-1</span>
+<span class="text-[10px] text-outline mt-1 uppercase">18m ago • INFO</span>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shrink-0"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-on-surface group-hover:text-primary transition-colors">Core Firmware Updated</span>
+<span class="text-[11px] text-on-surface-variant">Version 4.2.0-stable deployed globally</span>
+<span class="text-[10px] text-outline mt-1 uppercase">1h ago • SYSTEM</span>
+</div>
+</div>
+<div class="flex gap-4 group">
+<div class="mt-1 w-2 h-2 rounded-full bg-on-surface-variant shrink-0"></div>
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-on-surface group-hover:text-primary transition-colors">Maintenance Window Logged</span>
+<span class="text-[11px] text-on-surface-variant">Scheduled for Saturday 04:00 UTC</span>
+<span class="text-[10px] text-outline mt-1 uppercase">4h ago • TASK</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container-highest">
+<div class="bg-surface-container-highest/50 p-3 rounded-lg flex items-center justify-between">
+<div class="text-[10px] font-bold text-on-surface-variant">AI INSIGHT</div>
+<span class="material-symbols-outlined text-primary !text-lg" data-icon="bolt">bolt</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 italic leading-relaxed">System predicted a 12% peak increase in Tokyo region within the next 4 hours. Recommend proactive scaling.</p>
+</div>
+</div>
+<!-- Performance Chart -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest rounded-xl p-6 shadow-sm relative overflow-hidden h-[400px]">
+<div class="flex justify-between items-start mb-8 relative z-10">
+<div>
+<h3 class="text-sm font-bold text-on-surface uppercase tracking-widest mb-1">Network Reliability Index</h3>
+<p class="text-xs text-on-surface-variant">Rolling 24-hour surgical analysis</p>
+</div>
+<div class="flex gap-2">
+<span class="flex items-center gap-1.5 text-[10px] font-bold text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> CURRENT
+                        </span>
+<span class="flex items-center gap-1.5 text-[10px] font-bold text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> PREVIOUS
+                        </span>
+</div>
+</div>
+<!-- Surgical Graphic Placeholder -->
+<div class="absolute inset-x-0 bottom-0 top-24 surgical-grid px-8">
+<svg class="w-full h-full overflow-visible" viewbox="0 0 1000 200">
+<!-- Previous Data (Light) -->
+<path d="M0,150 Q100,140 200,160 T400,130 T600,150 T800,120 T1000,140" fill="none" stroke="#d9e4ea" stroke-width="1.5"></path>
+<!-- Current Data (Primary) -->
+<path d="M0,130 Q100,100 200,140 T400,110 T600,130 T800,100 T1000,115" fill="none" stroke="#0050FF" stroke-width="2.5"></path>
+<!-- High Frequency Data Points -->
+<circle cx="200" cy="140" fill="#0050FF" r="3"></circle>
+<circle cx="600" cy="130" fill="#0050FF" r="3"></circle>
+<circle cx="800" cy="100" fill="#0050FF" r="3"></circle>
+<!-- Measurement Lines -->
+<line stroke="#f0f4f7" stroke-width="1" x1="0" x2="1000" y1="180" y2="180"></line>
+<line stroke="#f0f4f7" stroke-width="1" x1="0" x2="1000" y1="100" y2="100"></line>
+<line stroke="#f0f4f7" stroke-width="1" x1="0" x2="1000" y1="20" y2="20"></line>
+</svg>
+</div>
+<div class="absolute bottom-6 left-6 right-6 flex justify-between text-[10px] font-bold text-outline uppercase tracking-tighter">
+<span>00:00</span>
+<span>04:00</span>
+<span>08:00</span>
+<span>12:00</span>
+<span>16:00</span>
+<span>20:00</span>
+<span>NOW</span>
+</div>
+</div>
+<!-- Operations Table -->
+<div class="col-span-12 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<div class="px-6 py-5 border-b border-surface-container-low flex justify-between items-center">
+<h3 class="text-sm font-bold text-on-surface uppercase tracking-widest">Active Infrastructure Tasks</h3>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined !text-sm text-outline" data-icon="search">search</span>
+<input class="bg-surface-container-low border-none text-[11px] font-medium rounded-md pl-8 pr-4 py-1.5 w-48 focus:ring-1 focus:ring-primary" placeholder="Filter tasks..." type="text"/>
+</div>
+</div>
+<div class="w-full">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container-low/50 text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">
+<tr>
+<th class="px-6 py-3">Task Identifier</th>
+<th class="px-6 py-3">Region</th>
+<th class="px-6 py-3">Status</th>
+<th class="px-6 py-3">Optimization</th>
+<th class="px-6 py-3 text-right">Throughput</th>
+</tr>
+</thead>
+<tbody class="text-xs font-medium">
+<tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container-low/30">
+<td class="px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-outline !text-lg" data-icon="dns">dns</span>
+<span>v-cluster-delta-01</span>
+</td>
+<td class="px-6 py-4 text-on-surface-variant">Singapore (SGP-1)</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded-sm bg-primary/10 text-primary text-[10px] font-bold">ROUTING</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 h-1 bg-surface-container rounded-full">
+<div class="w-3/4 h-full bg-primary"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-right font-bold tabular-nums">124.5 Gbps</td>
+</tr>
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low transition-colors border-b border-surface-container-low/30">
+<td class="px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-outline !text-lg" data-icon="storage">storage</span>
+<span>db-mirror-omega</span>
+</td>
+<td class="px-6 py-4 text-on-surface-variant">North Virginia (US-E)</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded-sm bg-surface-container-highest text-on-surface-variant text-[10px] font-bold uppercase">Syncing</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 h-1 bg-surface-container rounded-full">
+<div class="w-1/2 h-full bg-primary-dim"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-right font-bold tabular-nums">42.1 Gbps</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container-low/30">
+<td class="px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-outline !text-lg" data-icon="lan">lan</span>
+<span>edge-cache-london</span>
+</td>
+<td class="px-6 py-4 text-on-surface-variant">London (UK-W)</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded-sm bg-primary text-on-primary text-[10px] font-bold">ACTIVE</span>
+</td>
+<td class="px-6 py-4">
+<div class="w-24 h-1 bg-surface-container rounded-full">
+<div class="w-full h-full bg-primary"></div>
+</div>
+</td>
+<td class="px-6 py-4 text-right font-bold tabular-nums">288.0 Gbps</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 bg-white/80 dark:bg-[#0A172A]/80 backdrop-blur-xl z-50">
+<a class="flex flex-col items-center justify-center text-[#0050FF] dark:text-[#004bf0] bg-slate-100 dark:bg-slate-800/50 rounded-lg px-3 py-1 active:scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Overview</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1 hover:text-[#0050FF] dark:hover:text-[#004bf0] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Assets</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1 hover:text-[#0050FF] dark:hover:text-[#004bf0] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Alerts</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-3 py-1 hover:text-[#0050FF] dark:hover:text-[#004bf0] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-[#f7f9fb] dark:bg-[#0A172A] w-full mb-20 md:mb-0">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-6 opacity-60">
+<div class="font-['Inter'] text-[10px] font-normal text-slate-400 dark:text-slate-500">
+                © 2024 Voltia Infrastructure. v4.2.0-stable
+            </div>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="text-slate-400 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-300 font-['Inter'] text-[10px] transition-colors" href="#">System Status</a>
+<a class="text-slate-400 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-300 font-['Inter'] text-[10px] transition-colors" href="#">Compliance</a>
+<a class="text-slate-400 dark:text-slate-600 hover:text-slate-600 dark:hover:text-slate-300 font-['Inter'] text-[10px] transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>

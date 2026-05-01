@@ -1,0 +1,357 @@
+{
+  "common": {
+    "searchPlaceholder": "Search projects, products or orders...",
+    "getStarted": "Get Started",
+    "viewMore": "View More",
+    "solutions": "Solutions",
+    "catalog": "Catalog",
+    "projects": "Projects",
+    "resources": "Resources",
+    "about": "About",
+    "clientPortal": "Client Portal",
+    "adminAccess": "Admin",
+    "projectManager": "Project Manager",
+    "exploreSolutions": "Explore Solutions",
+    "watchDemo": "Watch Demo",
+    "trustedBy": "Trusted by 500+ Companies",
+    "averageRating": "4.9/5 Average Rating",
+    "featuredProject": "Featured Project",
+    "capacity": "Capacity",
+    "uptime": "Uptime",
+    "throughput": "Throughput",
+    "edgeLocations": "Edge Locations",
+    "dashboard": "Dashboard",
+    "inventory": "Inventory",
+    "quotations": "Quotations",
+    "orders": "Orders",
+    "cart": "Cart",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "allRightsReserved": "All rights reserved.",
+    "search": "Search",
+    "settings": "Settings",
+    "analytics": "Analytics",
+    "products": "Products",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookieSettings": "Cookie Settings",
+    "contact": "Contact",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{current}} of {{total}}",
+    "language": "System Language",
+    "languageDesc": "Select your preferred language for the interface.",
+    "notifications": "Notifications",
+    "comingSoon": "Coming Soon...",
+    "back": "Back",
+    "continue": "Continue",
+    "orContinueWith": "Or continue with"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "inventory": "Inventory",
+    "quotations": "Quotations",
+    "orders": "Orders",
+    "analytics": "Analytics"
+  },
+  "landing": {
+    "heroBadge": "Technical Excellence as a Service",
+    "heroTitle": "Empowering Your <1>Electrical</1> Future",
+    "heroDesc": "High-performance electrical infrastructure solutions for industrial, commercial, and residential projects. Engineered for reliability, safety, and efficiency.",
+    "sectionFeaturesTitle": "Engineered for Reliability",
+    "sectionFeaturesDesc": "Our infrastructure solutions are built on three core pillars of technical excellence.",
+    "features": {
+      "safety": {
+        "title": "Safety First",
+        "desc": "Advanced protection systems that exceed international safety standards and regulations."
+      },
+      "precision": {
+        "title": "Precision Control",
+        "desc": "Smart monitoring and control units for granular management of your electrical network."
+      },
+      "efficiency": {
+        "title": "Efficiency Optimized",
+        "desc": "High-efficiency components designed to minimize energy loss and maximize performance."
+      }
+    },
+    "project": {
+      "metropolisName": "Metropolis Power Grid Expansion",
+      "commandCenter": "Technical Command Center"
+    },
+    "catalog": {
+      "title": "Technical Catalog",
+      "subtitle": "Browse our high-performance electrical infrastructure components.",
+      "viewFull": "View Full Catalog"
+    },
+    "ctaTitle": "Ready to build the future?",
+    "ctaDesc": "Our technical team is ready to provide detailed specs and pricing for your specific infrastructure needs. Let's start your project today.",
+    "ctaQuoteButton": "Generate Quote Request",
+    "ctaCatalogButton": "Full Catalog PDF",
+    "infrastructure": {
+      "title": "Auto-Scaling Infrastructure",
+      "desc": "Predictive resource allocation that responds to global traffic patterns before latency impacts your users."
+    },
+    "authority": {
+      "title": "Quantifiable Authority",
+      "desc": "Our dashboard provides a surgical view of your operations. Minimalist design hides deep complexity, allowing you to focus on the numbers that matter.",
+      "instantFailover": {
+        "title": "Instant Failover",
+        "desc": "Under 150ms switchover for critical services."
+      },
+      "predictiveAnalysis": {
+        "title": "Predictive Analysis",
+        "desc": "AI-driven forecasting for capacity planning."
+      },
+      "liveThroughput": "Live Network Throughput",
+      "live": "LIVE",
+      "systemStatus": "System Status",
+      "operational": "Operational"
+    }
+  },
+  "dashboard": {
+    "title": "Technical Command Center",
+    "subtitle": "Real-time summary of your electrical infrastructure operations.",
+    "last30Days": "Last 30 Days",
+    "exportReport": "Export Report",
+    "syncingMetrics": "Syncing Metrics...",
+    "trendingAnalysis": "Trend Analysis",
+    "recentActivity": "Recent Activity",
+    "viewAll": "View All",
+    "systemHealth": "System Health",
+    "allSystemsOperational": "All systems operational",
+    "metrics": {
+      "revenue": "Total Revenue",
+      "projects": "Active Projects",
+      "orders": "Orders Processed",
+      "hardware": "Hardware Units"
+    },
+    "activities": {
+      "quoteApproved": "Quotation Approved",
+      "newProduct": "New Product Added",
+      "quoteRequested": "Quotation Requested",
+      "stockUpdated": "Stock Updated",
+      "time": {
+        "hours": "{{count}} hours ago",
+        "day": "1 day ago",
+        "days": "{{count}} days ago"
+      }
+    }
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Enter your credentials to access your technical dashboard.",
+    "registerTitle": "Create an account",
+    "registerSubtitle": "Join Voltia and start managing your infrastructure today.",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signingIn": "Signing in...",
+    "creatingAccount": "Creating account...",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "terms": "By signing up, you agree to our <1>Terms of Service</1> and <2>Privacy Policy</2>.",
+    "visualTitle": "Powering the <1>Infrastructure</1> of Tomorrow.",
+    "visualDesc": "Access your technical command center and manage your electrical projects with precision.",
+    "joinTeams": "Join 500+ Engineering Teams",
+    "invalidCredentials": "Invalid credentials. Please verify your email and password.",
+    "registerVisualTitle": "Join the <1>Future</1> of Power.",
+    "registerVisualDesc": "Create your engineering account and start managing your electrical infrastructure projects today.",
+    "enterpriseSecurity": "Enterprise Security",
+    "securityDesc": "All accounts are protected by multi-factor authentication and bank-grade encryption for your project data."
+  },
+  "products": {
+    "catalogTitle": "Technical Catalog",
+    "catalogSubtitle": "Explore our high-performance electrical infrastructure components.",
+    "addedToCart": "{{name}} added to cart",
+    "searchPlaceholder": "Search products...",
+    "fetching": "Fetching Catalog...",
+    "error": "Error connecting to products database.",
+    "lowStock": "Low Stock",
+    "reviews": "({{count}} Reviews)",
+    "price": "Price",
+    "sortBy": "Sort by",
+    "popularity": "Popularity",
+    "priceSort": "Price",
+    "lowToHigh": "Low to High",
+    "highToLow": "High to Low",
+    "categories": {
+      "all": "All",
+      "powerDistribution": "Power Distribution",
+      "monitoring": "Monitoring",
+      "protection": "Protection",
+      "lighting": "Lighting"
+    },
+    "details": {
+      "back": "Back to Catalog",
+      "unitPrice": "Unit Price",
+      "availability": "Availability",
+      "addToCart": "Add to Project Cart",
+      "downloadDatasheet": "Download Technical Datasheet",
+      "warranty": "5 Year Warranty",
+      "shipping": "Global Shipping",
+      "returns": "Easy Returns",
+      "tabs": {
+        "specs": "Specs",
+        "description": "Description",
+        "reviews": "Reviews",
+        "support": "Support"
+      },
+      "technicalSpecs": "Technical Specifications",
+      "compliance": "Compliance & Standards",
+      "techSupport": "Technical Support",
+      "techSupportDesc": "Need help with installation or configuration? Our engineers are available 24/7 for technical consultation.",
+      "contactEngineering": "Contact Engineering"
+    }
+  },
+  "inventory": {
+    "title": "Inventory Management",
+    "subtitle": "Track and manage your electrical component stock levels.",
+    "exportCsv": "Export CSV",
+    "addNew": "Add New Product",
+    "filterPlaceholder": "Filter by name...",
+    "allCategories": "All Categories",
+    "showingProducts": "Showing <1>{{count}}</1> products",
+    "table": {
+      "product": "Product",
+      "category": "Category",
+      "stock": "Stock",
+      "price": "Price",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "inStock": "In Stock",
+      "lowStock": "Low Stock",
+      "outOfStock": "Out of Stock"
+    }
+  },
+  "quotations": {
+    "wizardTitle": "Project Quotation Wizard",
+    "wizardSubtitle": "Our technical team will provide a comprehensive estimate based on your specific infrastructure needs.",
+    "steps": {
+      "type": "Project Type",
+      "typeDesc": "Select the scope of your project",
+      "details": "Project Details",
+      "detailsDesc": "Provide specific requirements",
+      "review": "Review & Submit",
+      "reviewDesc": "Confirm your request"
+    },
+    "selection": {
+      "title": "Select Project Type",
+      "subtitle": "Choose the category that best fits your infrastructure needs.",
+      "industrial": "Industrial",
+      "industrialDesc": "Factories, Substations, Plants",
+      "commercial": "Commercial",
+      "commercialDesc": "Offices, Retail Centers, Hospitals",
+      "residential": "Residential",
+      "residentialDesc": "Apartments, Complexes, Estates"
+    },
+    "form": {
+      "reference": "Reference Name",
+      "referencePlaceholder": "e.g. Substation A Expansion",
+      "surface": "Surface (m²)",
+      "surfacePlaceholder": "e.g. 15000",
+      "deadline": "Timeline",
+      "priority": "Priority Level",
+      "deadlines": {
+        "immediate": "Immediate (1-3 months)",
+        "medium": "Medium Term (3-6 months)",
+        "long": "Long Term (6+ months)",
+        "planning": "Planning Phase"
+      },
+      "priorities": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+      }
+    },
+    "review": {
+      "title": "Ready to Submit",
+      "subtitle": "Review all information before sending your request. Our technical team will contact you within 24-48 hours.",
+      "submit": "Submit Request",
+      "sending": "Sending..."
+    }
+  },
+  "cart": {
+    "title": "Review Your Cart",
+    "subtitle": "Review your technical infrastructure components before generating an order request.",
+    "itemsCount": "{{count}} Items",
+    "remove": "Remove",
+    "unit": "unit",
+    "empty": {
+      "title": "Your cart is empty",
+      "subtitle": "It seems you haven't added any components to your project yet.",
+      "explore": "Explore Technical Catalog"
+    },
+    "summary": {
+      "title": "Order Summary",
+      "subtotal": "Subtotal",
+      "tax": "Estimated Tax (12%)",
+      "shipping": "Shipping & Handling",
+      "free": "FREE",
+      "promoCode": "Promo Code",
+      "apply": "Apply",
+      "totalAmount": "Total Amount",
+      "certificationsNote": "Includes all technical certifications",
+      "checkout": "Generate Order Request",
+      "processing": "Processing...",
+      "secure": "Secure Transaction",
+      "fastDelivery": "Fast Delivery",
+      "easyReturns": "Easy Returns"
+    },
+    "technicalNote": {
+      "title": "Technical Note",
+      "desc": "Orders exceeding $50,000 require manual technical review by our engineering department before final approval."
+    }
+  },
+  "orders": {
+    "title": "Order Flow",
+    "subtitle": "Manage and track your electrical infrastructure orders.",
+    "success": "Order created successfully",
+    "searchPlaceholder": "Search orders...",
+    "newOrder": "New Order",
+    "addOrder": "Add Order",
+    "columns": {
+      "pending": "Pending Orders",
+      "review": "In Review",
+      "completed": "Completed Today"
+    },
+    "priority": "{{level}} Priority",
+    "priorities": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "time": {
+      "hours": "{{count}}h ago",
+      "days": "{{count}}d ago"
+    }
+  },
+  "settings": {
+    "subtitle": "Manage your preferences and account configuration.",
+    "language": "System Language",
+    "languageDesc": "Select your preferred language for the interface."
+  },
+  "footer": {
+    "desc": "Technical excellence as a service. Providing high-performance electrical infrastructure solutions globally.",
+    "solutions": {
+      "industrial": "Industrial Power",
+      "commercial": "Commercial Grid",
+      "residential": "Residential Systems",
+      "monitoring": "Smart Monitoring",
+      "protection": "Safety Protection"
+    },
+    "resources": {
+      "docs": "Technical Docs",
+      "caseStudies": "Case Studies",
+      "standards": "Safety Standards",
+      "support": "Support Center",
+      "api": "API Reference"
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "common": {
+    "searchPlaceholder": "Buscar proyectos, productos o pedidos...",
+    "getStarted": "Comenzar",
+    "viewMore": "Ver más",
+    "solutions": "Soluciones",
+    "catalog": "Catálogo",
+    "projects": "Proyectos",
+    "resources": "Recursos",
+    "about": "Nosotros",
+    "clientPortal": "Portal de Clientes",
+    "adminAccess": "Acceso Admin",
+    "projectManager": "Gerente de Proyecto",
+    "exploreSolutions": "Explorar Soluciones",
+    "watchDemo": "Ver Demo",
+    "trustedBy": "Con la confianza de +de 500 empresas",
+    "averageRating": "Calificación promedio de 4.9/5",
+    "featuredProject": "Proyecto Destacado",
+    "capacity": "Capacidad",
+    "uptime": "Tiempo de actividad",
+    "throughput": "Rendimiento",
+    "edgeLocations": "Ubicaciones Edge",
+    "dashboard": "Panel de Control",
+    "inventory": "Inventario",
+    "quotations": "Cotizaciones",
+    "orders": "Pedidos",
+    "cart": "Carrito",
+    "logout": "Cerrar Sesión",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "search": "Buscar",
+    "settings": "Configuración",
+    "analytics": "Análisis",
+    "products": "Productos",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "cookieSettings": "Configuración de Cookies",
+    "contact": "Contacto",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "pageOf": "Página {{current}} de {{total}}",
+    "language": "Idioma del Sistema",
+    "languageDesc": "Seleccione el idioma preferido para la interfaz.",
+    "notifications": "Notificaciones",
+    "comingSoon": "Próximamente...",
+    "back": "Atrás",
+    "continue": "Continuar",
+    "orContinueWith": "O continuar con",
+    "success": "Éxito",
+    "error": "Error",
+    "confirmDelete": "¿Está seguro de eliminar este elemento?"
+  },
+  "sidebar": {
+    "dashboard": "Panel de Control",
+    "products": "Productos",
+    "inventory": "Inventario",
+    "quotations": "Cotizaciones",
+    "orders": "Pedidos",
+    "analytics": "Análisis"
+  },
+  "landing": {
+    "heroBadge": "Excelencia Técnica como Servicio",
+    "heroTitle": "Impulsando tu futuro <1>eléctrico</1>",
+    "heroDesc": "Soluciones de infraestructura eléctrica de alto rendimiento para proyectos industriales, comerciales y residenciales. Diseñadas para la fiabilidad, seguridad y eficiencia.",
+    "sectionFeaturesTitle": "Diseñado para la Fiabilidad",
+    "sectionFeaturesDesc": "Nuestras soluciones de infraestructura se basan en tres pilares básicos de excelencia técnica.",
+    "features": {
+      "safety": {
+        "title": "Seguridad Primero",
+        "desc": "Sistemas de protección avanzada que superan las normas y reglamentos internacionales de seguridad."
+      },
+      "precision": {
+        "title": "Control de Precisión",
+        "desc": "Unidades de control y monitorización inteligentes para una gestión granular de su red eléctrica."
+      },
+      "efficiency": {
+        "title": "Eficiencia Optimizada",
+        "desc": "Componentes de alta eficiencia diseñados para minimizar la pérdida de energía y maximizar el rendimiento."
+      }
+    },
+    "project": {
+      "metropolisName": "Expansión de la Red Eléctrica Metropolis",
+      "commandCenter": "Centro de Mando Técnico"
+    },
+    "catalog": {
+      "title": "Catálogo Técnico",
+      "subtitle": "Explore nuestros componentes de infraestructura eléctrica de alto rendimiento.",
+      "viewFull": "Ver Catálogo Completo"
+    },
+    "ctaTitle": "¿Listo para construir el futuro?",
+    "ctaDesc": "Nuestro equipo técnico está listo para ofrecerte especificaciones detalladas y precios para tus necesidades específicas de infraestructura. Comencemos tu proyecto hoy.",
+    "ctaQuoteButton": "Generar solicitud de cotización",
+    "ctaCatalogButton": "PDF Catálogo Completo",
+    "infrastructure": {
+      "title": "Infraestructura con Auto-Escalado",
+      "desc": "Asignación predictiva de recursos que responde a los patrones de tráfico global antes de que la latencia afecte a sus usuarios."
+    },
+    "authority": {
+      "title": "Autoridad Cuantificable",
+      "desc": "Nuestro panel proporciona una visión quirúrgica de sus operaciones. El diseño minimalista oculta una profunda complejidad, permitiéndole centrarse en los números que importan.",
+      "instantFailover": {
+        "title": "Recuperación Instantánea",
+        "desc": "Conmutación en menos de 150ms para servicios críticos."
+      },
+      "predictiveAnalysis": {
+        "title": "Análisis Predictivo",
+        "desc": "Previsión impulsada por IA para la planificación de la capacidad."
+      },
+      "liveThroughput": "Rendimiento de Red en Vivo",
+      "live": "EN VIVO",
+      "systemStatus": "Estado del Sistema",
+      "operational": "Operativo"
+    }
+  },
+  "dashboard": {
+    "title": "Centro de Mando Técnico",
+    "subtitle": "Resumen en tiempo real de sus operaciones de infraestructura eléctrica.",
+    "last30Days": "Últimos 30 Días",
+    "exportReport": "Exportar Informe",
+    "syncingMetrics": "Sincronizando Métricas...",
+    "trendingAnalysis": "Análisis de Tendencias",
+    "recentActivity": "Actividad Reciente",
+    "viewAll": "Ver Todo",
+    "systemHealth": "Salud del Sistema",
+    "allSystemsOperational": "Todos los sistemas operativos",
+    "metrics": {
+      "revenue": "Ingresos Totales",
+      "projects": "Proyectos Activos",
+      "orders": "Pedidos Procesados",
+      "hardware": "Unidades de Hardware"
+    },
+    "activities": {
+      "quoteApproved": "Cotización Aprobada",
+      "newProduct": "Nuevo Producto Añadido",
+      "quoteRequested": "Cotización Solicitada",
+      "stockUpdated": "Stock Actualizado",
+      "time": {
+        "hours": "hace {{count}} horas",
+        "day": "hace 1 día",
+        "days": "hace {{count}} días"
+      }
+    }
+  },
+  "auth": {
+    "loginTitle": "Bienvenido de nuevo",
+    "loginSubtitle": "Ingrese sus credenciales para acceder a su panel técnico.",
+    "registerTitle": "Crear una cuenta",
+    "registerSubtitle": "Únase a Voltia y comience a gestionar su infraestructura hoy mismo.",
+    "noAccount": "¿No tiene una cuenta?",
+    "haveAccount": "¿Ya tiene una cuenta?",
+    "signingIn": "Iniciando sesión...",
+    "creatingAccount": "Creando cuenta...",
+    "rememberMe": "Recordarme",
+    "forgotPassword": "¿Olvidó su contraseña?",
+    "terms": "Al registrarse, usted acepta nuestros <1>Términos de Servicio</1> y <2>Política de Privacidad</2>.",
+    "visualTitle": "Impulsando la <1>Infraestructura</1> del Mañana.",
+    "visualDesc": "Acceda a su centro de mando técnico y gestione sus proyectos eléctricos con precisión.",
+    "joinTeams": "Únase a +500 Equipos de Ingeniería",
+    "invalidCredentials": "Credenciales inválidas. Por favor verifique su correo y contraseña.",
+    "registerVisualTitle": "Únete al <1>Futuro</1> de la Energía.",
+    "registerVisualDesc": "Cree su cuenta de ingeniería y comience a gestionar sus proyectos de infraestructura eléctrica hoy mismo.",
+    "enterpriseSecurity": "Seguridad Empresarial",
+    "securityDesc": "Todas las cuentas están protegidas por autenticación multifactor y cifrado de grado bancario para los datos de su proyecto."
+  },
+  "products": {
+    "catalogTitle": "Catálogo Técnico",
+    "catalogSubtitle": "Explore nuestros componentes de infraestructura eléctrica de alto rendimiento.",
+    "addedToCart": "{{name}} añadido al carrito",
+    "searchPlaceholder": "Buscar productos...",
+    "fetching": "Obteniendo Catálogo...",
+    "error": "Error al conectar con la base de datos de productos.",
+    "lowStock": "Stock Bajo",
+    "management": "Gestión de Catálogo operativos",
+    "deletedSuccess": "Producto eliminado del sistema con éxito",
+    "deleteError": "No se pudo eliminar el producto",
+    "reviews": "({{count}} Reseñas)",
+    "price": "Precio",
+    "sortBy": "Ordenar por",
+    "popularity": "Popularidad",
+    "priceSort": "Precio",
+    "lowToHigh": "Menor a Mayor",
+    "highToLow": "Mayor a Menor",
+    "categories": {
+      "all": "Todos",
+      "powerDistribution": "Distribución de Energía",
+      "monitoring": "Monitoreo",
+      "protection": "Protección",
+      "lighting": "Iluminación"
+    },
+    "details": {
+      "back": "Volver al Catálogo",
+      "unitPrice": "Precio Unitario",
+      "availability": "Disponibilidad",
+      "addToCart": "Agregar al Carrito del Proyecto",
+      "downloadDatasheet": "Descargar Ficha Técnica",
+      "warranty": "5 Años de Garantía",
+      "shipping": "Envío Global",
+      "returns": "Devoluciones Fáciles",
+      "tabs": {
+        "specs": "Especificaciones",
+        "description": "Descripción",
+        "reviews": "Reseñas",
+        "support": "Soporte"
+      },
+      "technicalSpecs": "Especificaciones Técnicas",
+      "compliance": "Cumplimiento y Estándares",
+      "techSupport": "Soporte Técnico",
+      "techSupportDesc": "¿Necesita ayuda con la instalación o configuración? Nuestros ingenieros están disponibles 24/7 para consultas técnicas.",
+      "contactEngineering": "Contactar con Ingeniería"
+    }
+  },
+  "inventory": {
+    "title": "Gestión de Inventario",
+    "subtitle": "Rastree y gestione sus niveles de stock de componentes eléctricos.",
+    "exportCsv": "Exportar CSV",
+    "addNew": "Agregar Nuevo Producto",
+    "filterPlaceholder": "Filtrar por nombre...",
+    "allCategories": "Todas las Categorías",
+    "showingProducts": "Mostrando <1>{{count}}</1> productos",
+    "table": {
+      "product": "Producto",
+      "category": "Categoría",
+      "stock": "Stock",
+      "price": "Precio",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "status": {
+      "inStock": "En Stock",
+      "lowStock": "Stock Bajo",
+      "outOfStock": "Sin Stock"
+    }
+  },
+  "quotations": {
+    "wizardTitle": "Asistente de Cotización de Proyecto",
+    "wizardSubtitle": "Nuestro equipo técnico proporcionará una estimación completa basada en sus necesidades específicas de infraestructura.",
+    "steps": {
+      "type": "Tipo de Proyecto",
+      "typeDesc": "Seleccione el alcance de su proyecto",
+      "details": "Detalles del Proyecto",
+      "detailsDesc": "Proporcione requisitos específicos",
+      "review": "Revisar y Enviar",
+      "reviewDesc": "Confirme su solicitud"
+    },
+    "selection": {
+      "title": "Seleccionar Tipo de Proyecto",
+      "subtitle": "Elija la categoría que mejor se adapte a sus necesidades de infraestructura.",
+      "industrial": "Industrial",
+      "industrialDesc": "Fábricas, Subestaciones, Plantas",
+      "commercial": "Comercial",
+      "commercialDesc": "Oficinas, Centros Comerciales, Hospitales",
+      "residential": "Residencial",
+      "residentialDesc": "Apartamentos, Complejos, Fincas"
+    },
+    "form": {
+      "reference": "Nombre de Referencia",
+      "referencePlaceholder": "ej. Expansión de Subestación A",
+      "surface": "Superficie (m²)",
+      "surfacePlaceholder": "ej. 15000",
+      "deadline": "Plazo",
+      "priority": "Nivel de Prioridad",
+      "deadlines": {
+        "immediate": "Inmediato (1-3 meses)",
+        "medium": "Mediano Plazo (3-6 meses)",
+        "long": "Largo Plazo (6+ meses)",
+        "planning": "Fase de Planificación"
+      },
+      "priorities": {
+        "low": "Baja",
+        "medium": "Media",
+        "high": "Alta"
+      }
+    },
+    "review": {
+      "title": "Listo para Enviar",
+      "subtitle": "Revise toda la información antes de enviar su solicitud. Nuestro equipo técnico se pondrá en contacto con usted en un plazo de 24-48 horas.",
+      "submit": "Enviar Solicitud",
+      "sending": "Enviando..."
+    }
+  },
+  "cart": {
+    "title": "Revise su Carrito",
+    "subtitle": "Revise sus componentes de infraestructura técnica antes de generar una solicitud de pedido.",
+    "itemsCount": "{{count}} Artículos",
+    "remove": "Eliminar",
+    "unit": "unidad",
+    "empty": {
+      "title": "Su carrito está vacío",
+      "subtitle": "Parece que aún no ha añadido ningún componente a su proyecto.",
+      "explore": "Explorar Catálogo Técnico"
+    },
+    "summary": {
+      "title": "Resumen del Pedido",
+      "subtotal": "Subtotal",
+      "tax": "Impuesto Estimado (12%)",
+      "shipping": "Envío y Manejo",
+      "free": "GRATIS",
+      "promoCode": "Código Promocional",
+      "apply": "Aplicar",
+      "totalAmount": "Monto Total",
+      "certificationsNote": "Incluye todas las certificaciones técnicas",
+      "checkout": "Generar Solicitud de Pedido",
+      "processing": "Procesando...",
+      "secure": "Transacción Segura",
+      "fastDelivery": "Entrega Rápida",
+      "easyReturns": "Devoluciones Fáciles"
+    },
+    "technicalNote": {
+      "title": "Nota Técnica",
+      "desc": "Los pedidos que superen los $50,000 requieren una revisión técnica manual por parte de nuestro departamento de ingeniería antes de la aprobación final."
+    }
+  },
+  "orders": {
+    "title": "Flujo de Pedidos",
+    "subtitle": "Gestione y rastree sus pedidos de infraestructura eléctrica.",
+    "success": "Pedido creado con éxito",
+    "searchPlaceholder": "Buscar pedidos...",
+    "newOrder": "Nuevo Pedido",
+    "addOrder": "Agregar Pedido",
+    "columns": {
+      "pending": "Pedidos Pendientes",
+      "review": "En Revisión",
+      "completed": "Completados"
+    },
+    "table": {
+      "id": "ID Pedido",
+      "customer": "Cliente",
+      "amount": "Monto Total",
+      "status": "Estado",
+      "date": "Fecha",
+      "actions": "Acciones",
+      "confirmDelete": "¿Está seguro de eliminar este elemento?",
+      "cancel": "Cancelar"
+    },
+    "statuses": {
+      "PENDING": "Pendiente",
+      "PROCESSING": "Procesando",
+      "SHIPPED": "Enviado",
+      "DELIVERED": "Entregado",
+      "CANCELLED": "Cancelado"
+    },
+    "modal": {
+      "title": "Nuevo Pedido Operativo",
+      "errorNoUser": "Seleccione un cliente",
+      "errorNoItems": "Añada al menos un producto",
+      "success": "Pedido creado correctamente",
+      "errorSave": "Error al crear el pedido",
+      "selectUser": "Cliente Final",
+      "chooseUser": "Seleccionar un cliente...",
+      "addProduct": "Buscador de Activos",
+      "searchPlaceholder": "Buscar por nombre o SKU...",
+      "create": "Confirmar Pedido"
+    },
+    "priority": "Prioridad {{level}}",
+    "priorities": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Baja"
+    },
+    "time": {
+      "hours": "hace {{count}}h",
+      "days": "hace {{count}}d"
+    }
+  },
+  "settings": {
+    "subtitle": "Gestione sus preferencias y configuración de cuenta.",
+    "language": "Idioma del Sistema",
+    "languageDesc": "Seleccione el idioma preferido para la interfaz.",
+    "visualPreferences": "Preferencias Visuales",
+    "viewType": "Modo de Visualización",
+    "viewTypeDesc": "Elija cómo prefiere ver las listas de elementos en el panel.",
+    "viewTable": "Tabla",
+    "viewKanban": "Kanban"
+  },
+  "footer": {
+    "desc": "Excelencia técnica como servicio. Proporcionando soluciones de infraestructura eléctrica de alto rendimiento a nivel mundial.",
+    "solutions": {
+      "industrial": "Energía Industrial",
+      "commercial": "Red Comercial",
+      "residential": "Sistemas Residenciales",
+      "monitoring": "Monitoreo Inteligente",
+      "protection": "Protección de Seguridad"
+    },
+    "resources": {
+      "docs": "Documentación Técnica",
+      "caseStudies": "Casos de Estudio",
+      "standards": "Estándares de Seguridad",
+      "support": "Centro de Soporte",
+      "api": "Referencia de API"
+    }
+  }
+}

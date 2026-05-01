@@ -1,0 +1,34 @@
+﻿
+> api@0.0.1 build
+> nest build
+
+node.exe : [96msrc/prisma/prisma.service.ts[0m:[93
+m13[0m:[93m7[0m - [91merror[0m[90m TS2353: 
+[0mObject literal may only specify known 
+properties, and 'uri' does not exist in type 
+'PoolConfig'.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([96msr 
+   c/prisma...e 'PoolConfig'.:String) [], RemoteExc  
+  eption
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+[7m13[0m       uri: process.env.DATABASE_URL,
+[7m  [0m [91m      ~~~[0m
+[96msrc/prisma/prisma.service.ts[0m:[93m16[0m:[9
+3m39[0m - [91merror[0m[90m TS2345: [0mArgument 
+of type 'Pool' is not assignable to parameter of 
+type 'string | PoolConfig'.
+
+[7m16[0m     const adapter = new 
+PrismaMariaDb(pool);
+[7m  [0m [91m                                     
+ ~~~~[0m
+
+Found 2 error(s).
+
